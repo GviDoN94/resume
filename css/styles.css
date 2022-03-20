@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('RobotoRegular.eot');
+  src: local('Roboto Regular'), local('RobotoRegular'),
+      url('/fonts/RobotoRegular.woff2') format('woff2'),
+      url('fonts/RobotoRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color:  #0f141e;
+    background: #f1f1f1
+}
+
+.container {
+    max-width: 1024px;
+    min-width: 380px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.section {
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.section:first-child {
+    padding: 0;
+}
+
+.section:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.section-main {
+    display: flex;
+}
+
+.avatar {
+    display: inline-block;
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.info-text{
+    padding: 40px 0 0 40px;
+}
+
+.name-title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: #86898f;
+}
+.paragraph:last-child {
+    margin: 0;
+}
+
+section.contacts {
+    background: #6DFEFF;
+}
+
+.contacts-link {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.contacts-link:hover {
+    color: blue;
+    text-decoration: underline;
+    transition: all 0.2s;
+}
+
+.contacts-link:active {
+    color: blueviolet;
+}
+
+.contacts-link:not(:last-child) {
+    margin-right: 30px;
+}
+
+ .section.hobbys {
+    background: #fff9dc;
+}
+
+.hobbys-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    list-style: none;
+}
+
+.hobby:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+section.work {
+    background: #ffe5e5;
+}
+
+.table-countainer {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.work-list {
+    width: 100%;
+    text-align: left;
+}
+
+.work-list-сell {
+    padding-bottom: 10px;
+}
+
+.work-list-сell:nth-child(2), .work-list-сell:nth-child(3){
+    color: #86898f;
+}
+
+section.contact-me {
+    background: #e5ffe7;
+}
+
+.form-container {
+    display: inline-block;
+    margin: 0 15px 10px 0;
+}
+
+.form-container:last-child {
+    margin-right: 0;
+}
+
+.form-lable {
+    display: block;
+}
+
+.btn {
+    padding: 5px 50px;
+    background-color: yellowgreen;
+    border: none;
+    color: rgb(1, 36, 9);
+    font-family: inherit;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 650px) {
+    .section-main {
+        display: block;
+        text-align: center;
+    }
+
+    .section {
+        text-align: center;
+    }
+
+    .info-text {
+        padding: 30px 20px 0;
+    }
+
+    .form-container {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
