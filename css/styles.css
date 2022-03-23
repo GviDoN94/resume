@@ -19,7 +19,7 @@ body {
     max-width: 1024px;
     min-width: 380px;
     margin: 30px auto;
-    padding: 40px 20px;
+    padding: 25px 20px;
     background: #6DFEFF;
     border: 1px solid #4babfa;
     border-radius: 50px;
@@ -136,21 +136,49 @@ section.work {
 }
 
 .table-countainer {
-    max-width: 700px;
+    /* max-width: 700px; */
+    width: 100%;
     margin: 0 auto;
 }
 
 .work-list {
     width: 100%;
-    text-align: left;
+    text-align: center;
+    border-collapse: collapse;
 }
 
 .work-list-сell {
-    padding-bottom: 10px;
+    padding: 5px 0;
 }
 
-.work-list-сell:nth-child(2), .work-list-сell:nth-child(3), .work-list-сell:nth-child(4){
+.work-list-сell:nth-child(2), .work-list-сell:nth-child(3) {
     color: #4c4e52;
+}
+
+.table-row:hover {
+    background: #ff9ae6;
+}
+
+.innopolis {
+    width: 150px;
+}
+
+.skillbox {
+    width: 150px;
+}
+
+.resault-school {
+    width: 150px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.study-end {
+    color: green;
+}
+
+.study-process {
+    color: blue;
 }
 
 section.contact-me {
