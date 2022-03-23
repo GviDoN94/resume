@@ -12,14 +12,18 @@ body {
     font-family: RobotoRegular, sans-serif;
     font-size: 16px;
     color:  #0f141e;
-    background: #f1f1f1
+    background: #c5fafc
 }
 
 .container {
     max-width: 1024px;
     min-width: 380px;
-    margin: 0 auto;
-    padding: 40px 0;
+    margin: 30px auto;
+    padding: 40px 20px;
+    background: #6DFEFF;
+    border: 1px solid #4babfa;
+    border-radius: 50px;
+    box-shadow: 6px 4px 15px 15px rgba(0, 0, 0, 0.25);
 }
 
 .section {
@@ -33,7 +37,7 @@ body {
 }
 
 .section:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 
 .section-main {
@@ -43,11 +47,12 @@ body {
 .avatar {
     display: inline-block;
     width: 200px;
+    height: 275px;
     border-radius: 25px;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
-.info-text{
-    padding: 40px 0 0 40px;
+.section-main-info {
+    padding-left: 40px;
 }
 
 .name-title {
@@ -75,24 +80,40 @@ section.contacts {
     background: #6DFEFF;
 }
 
+.title-cotacts {
+    font-size: 1.2em;
+}
+
 .contacts-link {
     display: inline-block;
-    color: black;
-    text-decoration: none;
-}
-
-.contacts-link:hover {
-    color: blue;
-    text-decoration: underline;
-    transition: all 0.2s;
-}
-
-.contacts-link:active {
-    color: blueviolet;
 }
 
 .contacts-link:not(:last-child) {
     margin-right: 30px;
+}
+
+.img-link {
+    width: 50px;
+}
+
+.telegram:hover {
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px 3px rgba(0, 0, 0, 0.25);
+}
+
+.vk:hover {
+    border-radius: 25%;
+    box-shadow: 4px 4px 15px 3px rgba(0, 0, 0, 0.25); 
+}
+
+.instagram:hover {
+    border-radius: 25%;
+    box-shadow: 4px 4px 15px 3px rgba(0, 0, 0, 0.25); 
+}
+
+.github:hover {
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px 3px rgba(0, 0, 0, 0.25);
 }
 
  .section.hobbys {
@@ -115,7 +136,7 @@ section.work {
 }
 
 .table-countainer {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -128,8 +149,8 @@ section.work {
     padding-bottom: 10px;
 }
 
-.work-list-сell:nth-child(2), .work-list-сell:nth-child(3){
-    color: #86898f;
+.work-list-сell:nth-child(2), .work-list-сell:nth-child(3), .work-list-сell:nth-child(4){
+    color: #4c4e52;
 }
 
 section.contact-me {
@@ -161,10 +182,20 @@ section.contact-me {
     opacity: 0.8;
 }
 
+@media (max-width: 1120px) {
+    .container {
+        margin: 30px;
+    }
+}
+
 @media (max-width: 650px) {
     .section-main {
         display: block;
         text-align: center;
+    }
+
+    .section-main-info {
+        padding: 0;
     }
 
     .section {
@@ -180,4 +211,13 @@ section.contact-me {
         margin: 0;
         margin-bottom: 10px;
     }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
 }
