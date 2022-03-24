@@ -28,7 +28,7 @@ body {
 
 .section {
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: center;
 }
 
@@ -123,35 +123,56 @@ section.contacts {
 .hobbys-list {
     margin: 0;
     padding: 0;
-    padding-left: 15px;
     list-style: none;
+}
+
+.hobby {
+    max-width: 200px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
 }
 
 .hobby:not(:last-child) {
     margin-bottom: 10px;
 }
+.hobby:hover {
+    color: #ff9ae6;
+}
 
-section.work {
+.sport {
+    background-image: url("/imgs/ran.png");
+}
+
+.english {
+    background-image: url("/imgs/en.png");
+}
+
+.games {
+    background-image: url("/imgs/game.png");
+}
+
+section.courses {
     background: #ffe5e5;
 }
 
 .table-countainer {
-    /* max-width: 700px; */
     width: 100%;
     margin: 0 auto;
 }
 
-.work-list {
+.courses-list {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
 }
 
-.work-list-сell {
+.courses-list-сell {
     padding: 5px 0;
 }
 
-.work-list-сell:nth-child(2), .work-list-сell:nth-child(3) {
+.courses-list-сell:nth-child(2), .courses-list-сell:nth-child(3) {
     color: #4c4e52;
 }
 
@@ -196,12 +217,33 @@ section.contact-me {
 
 .form-lable {
     display: block;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    outline: 1px solid green;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-textarea {
+    width: 400px;
+    height: 100px;
+    margin-bottom: 5px;
+    outline: 1px solid green;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: 2px solid green;
 }
 
 .btn {
     padding: 5px 50px;
     background-color: yellowgreen;
     border: none;
+    border-radius: 5px;
     color: rgb(1, 36, 9);
     font-family: inherit;
     cursor: pointer;
@@ -239,6 +281,21 @@ section.contact-me {
         margin: 0;
         margin-bottom: 10px;
     }
+
+    .img-link {
+        width: 35px;
+    }
+
+    .innopolis, .skillbox, .resault-school {
+        width: 100px;
+    }
+
+    .form-textarea {
+        width: 185px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
 }
 
 @media (max-width: 480px) {
