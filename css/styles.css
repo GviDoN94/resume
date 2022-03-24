@@ -142,15 +142,15 @@ section.contacts {
 }
 
 .sport {
-    background-image: url("/imgs/ran.png");
+    background-image: url("../imgs/ran.png");
 }
 
 .english {
-    background-image: url("/imgs/en.png");
+    background-image: url("../imgs/en.png");
 }
 
 .games {
-    background-image: url("/imgs/game.png");
+    background-image: url("../imgs/game.png");
 }
 
 section.courses {
