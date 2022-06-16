@@ -194,6 +194,10 @@ section.courses {
     border-bottom-left-radius:3px;
 }
 
+.geekbrains {
+    width: 150px;
+}
+
 .study-end {
     color: green;
 }
